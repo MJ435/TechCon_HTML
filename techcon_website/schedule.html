@@ -21,6 +21,10 @@
             color: white;
             margin: 0 15px;
             text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
         main {
             padding: 20px;
@@ -39,17 +43,45 @@
         }
         th, td {
             border: 1px solid #ddd;
-            padding: 8px;
+            padding: 12px;
+            text-align: left;
         }
         th {
             background-color: #f4f4f4;
-            text-align: left;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
         }
         footer {
             background-color: #333;
             color: white;
             padding: 10px 0;
             text-align: center;
+        }
+        @media (max-width: 600px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            th {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            tr {
+                margin-bottom: 15px;
+            }
+            td {
+                border: none;
+                position: relative;
+                padding-left: 50%;
+            }
+            td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 15px;
+                font-weight: bold;
+                white-space: nowrap;
+            }
         }
     </style>
 </head>
@@ -78,34 +110,34 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>09:00 AM - 10:00 AM</td>
-                    <td>Opening Keynote: The Future of AI</td>
-                    <td>Jane Doe</td>
+                    <td data-label="Time">09:00 AM - 10:00 AM</td>
+                    <td data-label="Session">Opening Keynote: The Future of AI</td>
+                    <td data-label="Speaker">Jane Doe</td>
                 </tr>
                 <tr>
-                    <td>10:15 AM - 11:15 AM</td>
-                    <td>Blockchain Innovations</td>
-                    <td>John Smith</td>
+                    <td data-label="Time">10:15 AM - 11:15 AM</td>
+                    <td data-label="Session">Blockchain Innovations</td>
+                    <td data-label="Speaker">John Smith</td>
                 </tr>
                 <tr>
-                    <td>11:30 AM - 12:30 PM</td>
-                    <td>Cybersecurity Trends</td>
-                    <td>Emily Johnson</td>
+                    <td data-label="Time">11:30 AM - 12:30 PM</td>
+                    <td data-label="Session">Cybersecurity Trends</td>
+                    <td data-label="Speaker">Emily Johnson</td>
                 </tr>
                 <tr>
-                    <td>01:30 PM - 02:30 PM</td>
-                    <td>Networking Lunch</td>
-                    <td>—</td>
+                    <td data-label="Time">01:30 PM - 02:30 PM</td>
+                    <td data-label="Session">Networking Lunch</td>
+                    <td data-label="Speaker">—</td>
                 </tr>
                 <tr>
-                    <td>02:45 PM - 03:45 PM</td>
-                    <td>Cloud Computing Essentials</td>
-                    <td>Michael Lee</td>
+                    <td data-label="Time">02:45 PM - 03:45 PM</td>
+                    <td data-label="Session">Cloud Computing Essentials</td>
+                    <td data-label="Speaker">Michael Lee</td>
                 </tr>
                 <tr>
-                    <td>04:00 PM - 05:00 PM</td>
-                    <td>Closing Panel: Tech Innovations</td>
-                    <td>Panel of Experts</td>
+                    <td data-label="Time">04:00 PM - 05:00 PM</td>
+                    <td data-label="Session">Closing Panel: Tech Innovations</td>
+                    <td data-label="Speaker">Panel of Experts</td>
                 </tr>
             </tbody>
         </table>
