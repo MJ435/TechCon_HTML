@@ -14,12 +14,15 @@
         header {
             background-color: #333;
             color: white;
-            padding: 10px 0;
+            padding: 15px 0;
             text-align: center;
+        }
+        nav {
+            margin-top: 10px;
         }
         nav a {
             color: white;
-            margin: 0 15px;
+            margin: 0 20px;
             text-decoration: none;
             font-weight: bold;
         }
@@ -27,23 +30,23 @@
             text-decoration: underline;
         }
         main {
-            padding: 20px;
+            padding: 30px 20px;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
         caption {
             caption-side: top;
             text-align: left;
-            font-size: 1.2em;
+            font-size: 1.5em;
             margin-bottom: 10px;
             font-weight: bold;
         }
         th, td {
             border: 1px solid #ddd;
-            padding: 12px;
+            padding: 12px 15px;
             text-align: left;
         }
         th {
@@ -55,10 +58,18 @@
         footer {
             background-color: #333;
             color: white;
-            padding: 10px 0;
+            padding: 15px 0;
             text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
-        @media (max-width: 600px) {
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
             table, thead, tbody, th, td, tr {
                 display: block;
             }
