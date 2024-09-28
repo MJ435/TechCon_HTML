@@ -4,91 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About TechCon 2024</title>
-    <style>
-        /* Basic CSS styles for layout */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        main {
-            padding: 20px;
-        }
-        article {
-            margin-bottom: 20px;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
-    <!-- Header Section -->
     <header>
         <h1>About TechCon 2024</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="schedule.html">Schedule</a>
-            <a href="register.html">Register</a>
-            <a href="contact.html">Contact</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <!-- Main Section -->
     <main>
-        <!-- History Article -->
         <article>
-            <h2>History of TechCon</h2>
-            <p>TechCon began in 2010 with the mission to bring together the brightest minds in technology to share knowledge and drive innovation. Over the years, it has grown into a premier event in the tech industry, attracting thousands of attendees from around the world.</p>
-            <img src="images/history.jpg" alt="Historical image of TechCon">
+            <h2>History</h2>
+            <p>
+                TechCon was established in 2010 as a platform to bring together technology enthusiasts and professionals
+                from various fields. Over the years, it has evolved into one of the premier tech conferences, featuring
+                innovative speakers and cutting-edge topics.
+            </p>
+            <img src="historical-image.jpg" alt="TechCon historical image" /> <!-- Replace with your historical image -->
         </article>
 
-        <!-- Mission Article -->
         <article>
-            <h2>Our Mission</h2>
-            <p>Our mission is to foster innovation, collaboration, and knowledge-sharing among technology professionals. We aim to provide a platform for showcasing groundbreaking ideas and solutions that shape the future of the tech industry.</p>
-            <img src="images/mission.jpg" alt="Image representing TechCon's mission">
+            <h2>Mission</h2>
+            <p>
+                Our mission is to inspire and empower individuals in the tech community by providing a collaborative space 
+                for learning, sharing ideas, and networking. We aim to bridge the gap between different sectors of the tech industry.
+            </p>
+            <img src="mission-image.jpg" alt="Mission statement image" /> <!-- Replace with an image representing your mission -->
         </article>
 
-        <!-- Past Speakers Article -->
         <article>
-            <h2>Notable Past Speakers</h2>
-            <p>Over the years, TechCon has featured some of the most influential figures in the tech industry. Here are a few notable speakers:</p>
+            <h2>Past Speakers</h2>
+            <p>Here are some notable speakers from previous years:</p>
             <div>
                 <h3>Jane Doe</h3>
-                <img src="images/jane_doe.jpg" alt="Jane Doe">
-                <p>Jane Doe is a leading expert in artificial intelligence with numerous contributions to the field.</p>
+                <img src="jane-doe.jpg" alt="Jane Doe, tech expert" /> <!-- Replace with Jane Doe's image -->
+                <p>Jane is a leading software engineer known for her work on AI and machine learning.</p>
             </div>
             <div>
                 <h3>John Smith</h3>
-                <img src="images/john_smith.jpg" alt="John Smith">
-                <p>John Smith is a renowned entrepreneur and innovator in the tech space.</p>
+                <img src="john-smith.jpg" alt="John Smith, industry leader" /> <!-- Replace with John Smith's image -->
+                <p>John is a tech entrepreneur and founder of several successful startups.</p>
             </div>
+            <!-- Add more speakers as needed -->
         </article>
     </main>
 
-    <!-- Footer Section -->
-<footer>
-    <p>&copy; 2024 TechCon. All rights reserved.</p>
-</footer>
-    
+    <footer>
+        <p>&copy; 2024 TechCon. All rights reserved.</p>
+    </footer>
 </body>
 </html>
